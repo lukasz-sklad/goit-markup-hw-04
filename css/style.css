@@ -15,7 +15,9 @@ body {
 	margin: 0;
 	padding: 0;
 }
-
+li {
+	list-style-type: none;
+}
 .wrapper {
 	background-color: var(--white);
 	margin: 0 auto;
@@ -103,14 +105,14 @@ body {
 	line-height: 1.2;
 	padding: 0;
 }
-
 .top {
-	background-image: linear-gradient(
-      0deg,
-      rgba(47, 48, 58, 0.4) 0%,
-      rgba(47, 48, 58, 0.4) 100%
-    ),
-    url("../images/portfolio.jpg");
+	background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
+		url('../images/portfolio.jpg');
+
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-size: 100%;
+
 	background-color: var(--darkgrey);
 	color: var(--white);
 	width: 100%;
@@ -226,13 +228,13 @@ body {
 	gap: 30px;
 	justify-content: center;
 }
-.team-card {
+/* .team-card {
 	background-color: var(--white);
 	margin: 0;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
-	text-align: center;
-}
+	text-align: center; */
+/* } */
 .team-name {
 	color: var(--black);
 	margin: 30px 0 10px 0;
@@ -284,7 +286,14 @@ body {
 	margin: 20px 0 0 0;
 	font-style: normal;
 }
-
+.services-header {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.166666666666667;
+	text-align: center;
+	color: var(--black);
+	margin: 0px 0 50px 0;
+}
 /* Portfolio only*/
 .line {
 	border-bottom: var(--cream) solid 1px;
@@ -323,3 +332,75 @@ body {
 	margin: 0;
 }
 /* Portfolio only*/
+
+/* Icons svg only */
+.svg-top-one {
+	display: inline-block;
+	fill: var(--grey);
+}
+.svg-top-two {
+	display: inline-block;
+	fill: var(--grey);
+}
+.svg-top-one:hover {
+	fill: var(--blue);
+}
+.svg-top-two:hover {
+	fill: var(--blue);
+}
+.svg {
+	background-color: #f5f4fa;
+}
+.icon {
+	width: 270px;
+	height: 120px;
+}
+.member-social-icon {
+	fill: #afb1b8;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+}
+.member-social-icon:hover,
+.member-social-icon:focus {
+	background-color: #2196f3;
+	fill: white;
+}
+.member-social {
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 16px;
+	margin-left: -10px;
+	/* kurde cosik zmienialismy */
+	gap: 10px;
+}
+.partners {
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+	padding-bottom: 94px;
+	padding-left: 15px;
+}
+.icons-partners {
+	width: 170px;
+	height: 92px;
+	border: 1px solid #afb1b8;
+	border-radius: 4px;
+	fill: #afb1b8;
+}
+.icons-partners:hover {
+	fill: var(--blue);
+	border-color: var(var(--blue));
+}
+
+/* Icons svg only */
+
+.team-card {
+	width: 270px;
+	height: 428px;
+	background-color: var(--white);
+	margin: 0;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+	text-align: center;
+}
